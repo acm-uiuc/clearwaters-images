@@ -5,8 +5,8 @@ FROM aarch64/ubuntu
 MAINTAINER Tanishq Dubey <tdubey3@illinois.edu>
 
 #### INSTALL MPICH ####
-RUN apt update
-RUN apt install mpich -y
+RUN apt-get update
+RUN apt-get install mpich -y
 
 #### ADD DEFAULT USER ####
 ARG USER=mpi
